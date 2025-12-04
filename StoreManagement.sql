@@ -95,6 +95,7 @@ INSERT INTO Produit (RefProd, Design, PrixHT) VALUES
 (15, 'Clé USB 64Go', 150.0),
 (16, 'Carnet de notes', 35.0),
 (17, 'Tableau Blanc', 500.0),
+(19, 'Agrafeuse', 45.0),
 (18, 'Scanner Epson', 2500.0),
 (20, 'Clé USB 128Go', 250.0),
 (21, 'Batterie Externe 10000mAh', 350.0),
@@ -118,6 +119,7 @@ INSERT INTO Facture (Numfact, DatFact) VALUES
 (5, '2024-02-05'),
 (6, '2024-02-10'),
 (7, '2010-10-16'),
+(8, '2010-11-20'),
 (9, '2010-12-02'),
 (10, '2011-03-03'),
 (11, '2012-06-17'),
@@ -128,7 +130,19 @@ INSERT INTO Facture (Numfact, DatFact) VALUES
 (16, '2024-04-01'),
 (17, '2024-05-03'),
 (18, '2024-03-10'),
-(19, '2024-03-15');
+(19, '2024-03-15'),
+(20, '2024-04-10'),
+(21, '2024-04-12'),
+(22, '2024-04-15'),
+(23, '2024-04-18'),
+(24, '2024-04-20'),
+(25, '2024-04-22'),
+(26, '2024-04-25'),
+(27, '2024-04-28'),
+(28, '2024-05-01'),
+(29, '2024-05-05'),
+(30, '2024-05-10');
+
 
 -- Insert Clients
 INSERT INTO Client (IdClient, Nom, Prenom, Ville) VALUES
@@ -219,3 +233,4 @@ UNION ALL SELECT 'Anc_Produit', COUNT(*) FROM Anc_Produit;
 SELECT * FROM Produit LIMIT 5;
 SELECT * FROM Facture LIMIT 5;
 SELECT * FROM Client LIMIT 5;
+
